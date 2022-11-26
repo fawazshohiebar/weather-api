@@ -1,0 +1,4 @@
+2022-11-25 16:27:13.745 [info] update#setState idle
+2022-11-25 16:27:15.468 [info] Starting extension host with pid 79088 (fork() took 5 ms).
+2022-11-25 16:27:18.547 [info] Waiting for extension host with pid 79088 to exit.
+2022-11-25 16:27:18.555 [info] Extension host with pid 79088 exited with code: 0, signal: null.

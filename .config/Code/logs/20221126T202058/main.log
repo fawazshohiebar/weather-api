@@ -1,0 +1,6 @@
+2022-11-26 20:20:58.622 [info] update#setState idle
+2022-11-26 20:20:59.434 [info] Starting extension host with pid 5926 (fork() took 3 ms).
+2022-11-26 20:21:28.628 [info] update#setState checking for updates
+2022-11-26 20:21:28.726 [info] update#setState idle
+2022-11-26 20:21:36.987 [info] Extension host with pid 5926 exited with code: 0, signal: null.
+2022-11-26 20:21:37.644 [info] Starting extension host with pid 6071 (fork() took 8 ms).

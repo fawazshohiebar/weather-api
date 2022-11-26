@@ -1,0 +1,11 @@
+2022/11/25-15:11:11.244 3 Creating DB /home/fawaz/.config/google-chrome/Default/Local Storage/leveldb since it was missing.
+2022/11/25-15:11:11.264 3 Reusing MANIFEST /home/fawaz/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2022/11/25-15:15:08.772 7 Level-0 table #5: started
+2022/11/25-15:15:08.776 7 Level-0 table #5: 43159 bytes OK
+2022/11/25-15:15:08.781 7 Delete type=0 #3
+2022/11/25-15:40:57.124 7 Level-0 table #7: started
+2022/11/25-15:40:57.168 7 Level-0 table #7: 43344 bytes OK
+2022/11/25-15:40:57.174 7 Delete type=0 #4
+2022/11/25-15:41:54.171 17 Level-0 table #9: started
+2022/11/25-15:41:54.176 17 Level-0 table #9: 28485 bytes OK
+2022/11/25-15:41:54.181 17 Delete type=0 #6

@@ -1,0 +1,6 @@
+2022/11/26-20:18:21.428 3 Reusing MANIFEST /home/fawaz/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2022/11/26-20:18:21.429 3 Recovering log #8
+2022/11/26-20:18:21.430 3 Reusing old log /home/fawaz/.config/google-chrome/Default/Local Storage/leveldb/000008.log 
+2022/11/26-20:29:35.744 4 Level-0 table #12: started
+2022/11/26-20:29:35.748 4 Level-0 table #12: 23406 bytes OK
+2022/11/26-20:29:35.753 4 Delete type=0 #8

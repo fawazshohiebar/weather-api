@@ -1,0 +1,7 @@
+2022/11/26-20:18:26.775 af5 Reusing MANIFEST /home/fawaz/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/11/26-20:18:26.776 af5 Recovering log #18
+2022/11/26-20:18:26.792 af5 Reusing old log /home/fawaz/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000018.log 
+2022/11/26-20:18:26.792 af5 Delete type=2 #17
+2022/11/26-20:32:52.632 1944 Level-0 table #23: started
+2022/11/26-20:32:52.642 1944 Level-0 table #23: 965855 bytes OK
+2022/11/26-20:32:52.648 1944 Delete type=0 #18
