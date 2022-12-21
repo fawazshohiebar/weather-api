@@ -14,7 +14,7 @@ import axios from 'axios';
 function App() {
 
 const [weatherInfo,setWeatherInfo]=useState();
-const [location,setLocation]=useState('lebanon');
+const [location,setLocation]=useState('');
 
 const [headerid,setheaderid]=useState(null);
 
@@ -32,7 +32,7 @@ const [description,setdescription]=useState();
   const [message, setMessage] = useState('');
 
   const handleChange = event => {
-    setMessage(event.target.value);
+    setLocation(event.target.value);
 
     console.log('value is:', event.target.value);
   };
@@ -76,7 +76,7 @@ const monket =()=>{
     <div className="App">
 
     <div className='form1'>
-        <input      onChange={handleChange} value={message} type="text" placeholder="Type in a city name" className="text-city"/>
+        <input      onChange={handleChange} type="text" placeholder="Type in a city name" className="text-city"/>
 
         <button  onClick={async e=>{await datagetter();setLocation(message)}} className="button"> FIND WEATHER</button>
     
