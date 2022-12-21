@@ -1,188 +1,129 @@
-/*.form1{
-  background-color: #66acc4;
-  height: 100px;
-  display: flex;
+.App {
+  text-align: center;
 }
-.text-city{
-  font-family: Raleway;
-  height: 50px;
-  width: 250px;
-  margin-top: 20px;
-  background: none;
-  margin-left: 40px;
-  border: none;
-  color: white;
+body{
+  background-color: lightblue;
 }
-::placeholder {
-  color: white;
-  opacity: 1; 
-  font-size: 20px;
-  font-family: Raleway;
-}
-*/
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
 
 .text-city {
-  background-color: rgb(32, 32, 245);
-  border: none;
-  outline-style: none;
+background-color: rgb(32, 32, 245);
+border: none;
+}
+
+.form1{
+background-color: #66acc4;
+width: 100%;
+height: 100px;
+position: relative;
+display: flex;
+align-items: center;
+}
+
+.form1 .button {
+  padding: 15px;
+  color: darkblue;
   font-size: 25px;
-  
-  
-  }
-  .text-city input {
-    border: none;
-  
-  }
-  
-  .form1{
-  background-color: #66acc4;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  width: 230px;
+}
+
+ .form1 .text-city {
+  padding: 25px;
+  background-color: transparent ;
+  color:white;
+  border: none;
+  margin-right: 5px;
+  width: 300px;
+  font-family: Raleway;
+  text-decoration: none;
+  outline: none;
+}
+
+.form1 .text-city::placeholder{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.form1 .text-city:active{
+  text-decoration: none;
+}
+.cloud{
   width: 100%;
-  height: 100px;
-  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  
-  }
-  
-  
-  .form1 .button {
-  
+  font-family: "Raleway", sans-serif;
+  background-color: lightblue;
+}
+.cloud .svg {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
 
-    color: darkblue;
-    font-size: 25px;
-    background-color: blue;
-    border: none;
-    border-radius: 5px;
+.cloud h3 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.cloud h2 {
+  margin-bottom: 30px;
+  color: darkblue;
+}
+.cloud p {
+  color: darkblue;
+}
+.cloud span{
+  font-weight: 400;
+  color: darkblue;
+  opacity: 0.7;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.small {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+ /* background-color: lightblue;*/
+  font-weight: bold;
+  height: 250PX;
+  margin-top: 80px;
+ }
+
+ .small .time {
+  display: flex;
+
+}
+.time{
+  flex-direction: row;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.small .svg1{
+  width: 50%;
+  margin: 0;
+}
+
+@keyframes App-logo-spin {
  
-  
-  
-  }
-  
-   .form1 .text-city {
-    padding: 25px;
-    background-color: transparent ;
-    color:white;
-    /* border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: hidden; */
-    border: none;
-    margin-right: 5px;
-    width: 300px;
-    font-family: Raleway;
-  
-  }
-  
-  .form1 .text-city::placeholder{
-    color: white;
-    font-size: 25px;
-    text-decoration: none;
-  }
-  
-  .form1 .text-city:active{
-    border: 0em;
-  
-  }
-  
-  
-  
-  
-  
-  .cloud{
-    background-color: lightblue;
-  }
-  .cloud{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    font-family: "Raleway", sans-serif;
-  }
-  .cloud .svg {
-    width: 300px;
-    height: 300px;
-    text-align: center;
-  }
-  
-  .cloud h3 {
-    color: white;
-    font-weight: bold;
-    margin-bottom: 40px;
-    font-size: 25px;
-  }
-  
-  .cloud h2 {
-    margin-bottom: 30px;
-    color: darkblue;
-  }
-  .cloud p {
-    color: darkblue;
-  }
-  
-  
-  .cloud .st0{fill:#F4A71D;}  
-  .cloud .st1{fill:#FFFFFF;}
-  
-  .cloud span{
-    font-weight: 400;
-    color: darkblue;
-    opacity: 0.7;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .small {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: "Raleway", sans-serif;
-    background-color: lightblue;
-    font-weight: bold;
-    height: 250PX;
-  
-    
-   
-  }
-  .small .st0{fill:#F4A71D;}
-  .small .st1{fill:#FFFFFF;}
-  .small .time {
-    display: flex;
-    margin-top: 40px;
-  }
-  .time{
-    margin-top: 2vw;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-   justify-content: space-around;
-   background-color: lightblue;
-   margin-left: 13%;
-   
-
- 
-  }
-  
-.svg1{
-  width: 5vw;
-    height: 5vw;
-  }
-  
-  .main{
-    display: flex;
-    flex-direction: column;
-    background-color: lightblue;
-  }
-
-
-
-  .comp{
-    
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+} 

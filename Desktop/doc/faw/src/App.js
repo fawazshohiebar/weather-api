@@ -1,151 +1,102 @@
-import React from "react"
+import logo from './logo.svg';
 import './App.css';
-import { useState } from "react";
-import { useEffect } from "react";
-import Footer from "./Footer";
-
-import mostcloud from '../src/weather-icons/mostlycloudy.svg';
-import sunclear from '../src/weather-icons/clear.svg';
-
-import Headerimage from "./Headerimage";
-import axios from 'axios';
-
+import mostcloud from './weather-icons/mostlycloudy.svg';
+import sunclear from './weather-icons/clear.svg';
 
 function App() {
-
-const [weatherInfo,setWeatherInfo]=useState();
-const [location,setLocation]=useState('lebanon');
-
-const [headerid,setheaderid]=useState(null);
-
-
-const [tempmin,settempmin]=useState();
-const [tempmax,settempmax]=useState();
-const[humidity,sethumidity]=useState();
-const[Pressure,setPressure]=useState();
-const [description,setdescription]=useState();
-
-
-  const [lis,setlis]=useState([])
-
-
-  const [message, setMessage] = useState('');
-
-  const handleChange = event => {
-    setMessage(event.target.value);
-
-    console.log('value is:', event.target.value);
-  };
-
-
-
-  const dol =`https://api.openweathermap.org/data/2.5/forecast?q=${location}&cnt=8&units=metric&appid=ccde546cfeb486c4e0022c6fda4a4a4d`;
-
-const datagetter= async ()=>{
-
-  const {data} = await axios.get(dol);
-  console.log(data)
-  setWeatherInfo(data)
-  console.log(weatherInfo?.list)
-
-monket();
-
-
-
-
-
- 
-
-
-
-}
-
-const monket =()=>{
-  setheaderid(weatherInfo.list[0].weather[0].id)
-  settempmin(weatherInfo.list[0].main.temp_min)
-  settempmax(weatherInfo.list[0] .main.temp_max)
-  sethumidity(weatherInfo.list[0].main.humidity)
-  setPressure(weatherInfo.list[0].main.pressure)
-  setdescription(weatherInfo.list[0].weather[0].description)
-  
-}
-
-
-
   return (
     <div className="App">
 
-    <div className='form1'>
-        <input      onChange={handleChange} value={message} type="text" placeholder="Type in a city name" className="text-city"/>
+<form className='form1'>
+        <input type="text" placeholder="Type in a city name" className="text-city"/>
+        <button type="button" className="button">FIND WEATHER</button>
+         </form>
 
-        <button  onClick={async e=>{await datagetter();setLocation(message)}} className="button"> FIND WEATHER</button>
-    
-     </div>
-     
-  <div className="main">
 <div className="cloud">
- <Headerimage id={headerid}/>
+     <img src={mostcloud} alt='mostly-clouded' className='svg'/>
 
-          <h3>{description}</h3>
+          <h3>overcast clouds</h3>
           <h2>
-            Temperature <span> {tempmin} &deg; to {tempmax} &deg; C</span>
+            Temperature <span> 10 &deg; to 11 &deg; C</span>
           </h2>
           <p>
-            Humidity <span> {humidity} % </span>{" "}
-            Pressure
-            <span> {Pressure}</span>
+          <strong>  Humidity </strong><span> 78% </span>{" "}
+           <strong> Pressure</strong>
+            <span> 1008.48</span>
           </p>
   </div>
 
 
+  <div className="small">
+          <div className="time">
+            <div>
+              <div>03:00</div>
+              <div>
+              <img src={mostcloud} alt='mostly-clouded' className='svg1'/>
+              </div>
 
-  <div className="comp">
+              <div>8&deg;C</div>
+            </div>
+           
 
+            <div>
+              <div>06:00</div>
+              <div>
+              <img src={mostcloud} alt='mostly-clouded' className='svg1'/>
+              </div>
 
-  {weatherInfo?.list.map((hourFrame, index) => (
-        <>
-        
-<Footer  io={hourFrame.weather[0].id} time={hourFrame.dt_txt.split(" ")[1].split(":")[0]} temp={hourFrame.main.temp}/>
-
-        </>
-      ))}
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+              <div>9&deg;C</div>
             </div>
 
+            <div>
+              <div>09:00</div>
+              <div>
+              <img src={sunclear} alt='clear' className='svg1'/>
+              </div>
+
+              <div>14 &deg; C</div>
+            </div>
+
+            <div>
+              <div>12:00</div>
+              <div>
+              <img src={sunclear} alt='clear' className='svg1'/>
+              </div>
+
+              <div>17 &deg; C</div>
+            </div>
+
+            <div>
+              <div>15:00</div>
+              <div>
+              <img src={sunclear} alt='clear' className='svg1'/>
+              </div>
+
+              <div>18 &deg; C</div>
+            </div>
+            <div>
+              <div>18:00</div>
+
+              <div>
+              <img src={sunclear} alt='clear' className='svg1'/>
+              </div>
+
+              <div>16 &deg; C</div>
+            </div>
+            <div>
+              <div>21:00</div>
+              <div>
+              <img src={mostcloud} alt='mostly-clouded' className='svg1'/>
+              </div>
+
+              <div>13 &deg; C</div>
+            </div>
+
+            </div>
+            </div>
+     
     </div>
-  );
+  ); 
 }
 
 export default App;
